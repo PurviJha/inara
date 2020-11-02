@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import {
-    Card, Button, CardTitle, CardBody, CardSubtitle, CardText
+    Card, Button, CardTitle, CardBody,
 } from 'reactstrap';
 
 export default function Form() {
@@ -8,8 +8,7 @@ export default function Form() {
     const [lname, setlname] = useState("")
     const [skill, setSkill] = useState("")
     const [proficiancy, setProficiancy] = useState("")
-
-
+  
     const handleClick = () => {
         localStorage.removeItem("data");
         const userData = {
